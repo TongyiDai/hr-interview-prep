@@ -1,16 +1,16 @@
 {
   "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
-  "intent": {"core_message": "回答先留下证据，再按锚定标准评分。", "composition": "input-process-output", "focus_node": "evidence"},
+  "intent": {"core_message": "评分只对照证据", "subtitle": "先记录事实，再按行为锚定复核", "composition": "input-process-output", "focus_node": "evidence"},
   "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
   "nodes": [
-    {"id": "answer", "type": "plane", "label": "回答", "importance": 3},
-    {"id": "evidence", "type": "cube", "label": "证据", "importance": 5, "accent": true},
-    {"id": "rubric", "type": "rect", "label": "评分锚定", "importance": 3},
-    {"id": "human", "type": "frame", "label": "人工复核", "importance": 3}
+    {"id": "answer", "type": "plane", "label": "面试回答", "importance": 3},
+    {"id": "evidence", "type": "circle", "label": "可复核证据", "importance": 5, "accent": true},
+    {"id": "rubric", "type": "line", "label": "1–4 分锚定", "importance": 3},
+    {"id": "human", "type": "point", "label": "人工复核", "importance": 3}
   ],
   "edges": [
-    {"from": "answer", "to": "evidence", "relation": "提取"},
+    {"from": "answer", "to": "evidence", "relation": "记录"},
     {"from": "evidence", "to": "rubric", "relation": "对照"},
-    {"from": "rubric", "to": "human", "relation": "复核"}
+    {"from": "rubric", "to": "human", "relation": "提交"}
   ]
 }
