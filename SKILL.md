@@ -116,6 +116,8 @@ description: "从本地消息、岗位说明、HR 材料、表格、邮件或其
 lark-cli auth status --json --verify
 ```
 
+支持 `auth status --json --verify` 的环境必须确认 `identity=user`、`verified=true`。当前 CLI 构建若没有 `auth` 子命令，可退回 `contact +get-user --as user` 或 `task +get-my-tasks --as user` 做只读兼容探测。
+
 可读取用户明确授权的岗位说明、招聘规范、面试模板或脱敏表格：
 
 ```bash

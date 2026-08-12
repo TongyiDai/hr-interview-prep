@@ -40,7 +40,7 @@
 lark-cli auth status --json --verify
 ```
 
-确认 `identity=user`、`verified=true` 和授权有效。任何 Agent 都必须尊重当前账号和租户边界；没有外部系统能力时，继续使用用户提供的脱敏文件完成本地生成。
+支持 `auth status --json --verify` 的环境必须确认 `identity=user`、`verified=true` 和授权有效。当前 CLI 构建若没有 `auth` 子命令，可退回 `contact +get-user --as user` 或 `task +get-my-tasks --as user` 做只读兼容探测。任何 Agent 都必须尊重当前账号和租户边界；没有外部系统能力时，继续使用用户提供的脱敏文件完成本地生成。
 
 ### 3. 读取最小输入
 
