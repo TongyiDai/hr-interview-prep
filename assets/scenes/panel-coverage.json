@@ -1,0 +1,18 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {"core_message": "面试官分工覆盖能力，减少重复提问和漏测。", "composition": "layered-architecture", "focus_node": "panel"},
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "panel", "type": "cube", "label": "面试团队", "importance": 5, "accent": true},
+    {"id": "business", "type": "plane", "label": "业务判断", "importance": 3},
+    {"id": "collaboration", "type": "plane", "label": "协作证据", "importance": 3},
+    {"id": "execution", "type": "plane", "label": "执行结果", "importance": 3},
+    {"id": "coverage", "type": "frame", "label": "覆盖检查", "importance": 2}
+  ],
+  "edges": [
+    {"from": "panel", "to": "business", "relation": "分工"},
+    {"from": "business", "to": "collaboration", "relation": "补充"},
+    {"from": "collaboration", "to": "execution", "relation": "补充"},
+    {"from": "execution", "to": "coverage", "relation": "检查"}
+  ]
+}

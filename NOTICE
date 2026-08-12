@@ -1,0 +1,8 @@
+This package adapts concepts and source material from Anthropic's knowledge-work-plugins repository.
+
+Upstream project: https://github.com/anthropics/knowledge-work-plugins
+Upstream plugin: human-resources
+Upstream Skill: interview-prep
+License: Apache License 2.0; see LICENSE-APACHE-2.0.
+
+Chinese documentation, general material-intake guidance, optional Feishu/Lark CLI integration guidance, local interview-kit generator, tests, and visual assets in this package are project additions.

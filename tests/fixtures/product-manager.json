@@ -1,0 +1,97 @@
+{
+  "source_materials": [
+    {"id": "role-brief", "type": "local_markdown", "label": "岗位说明.md", "status": "已确认"},
+    {"id": "hr-chat", "type": "chat_export", "label": "招聘负责人消息导出", "status": "待确认"}
+  ],
+  "role": {
+    "title": "产品经理",
+    "level": "中级",
+    "outcomes": [
+      "明确用户问题并推动产品交付",
+      "用证据排序需求并协调跨团队执行"
+    ],
+    "constraints": [
+      "需要与研发、设计和销售协作",
+      "面试总时长控制在 120 分钟内"
+    ]
+  },
+  "competencies": [
+    {
+      "id": "problem_solving",
+      "name": "问题拆解",
+      "definition": "把模糊问题拆成可验证的判断和行动",
+      "signals": ["能明确问题边界", "能用证据排序优先级"],
+      "behavioral_questions": [
+        "讲一个你把模糊问题拆清楚的例子。",
+        "讲一个你改变问题定义的例子。"
+      ],
+      "situational_questions": ["如果多个团队对问题定义不一致，你会怎么推进？"],
+      "probes": ["你本人做了什么？", "结果如何验证？"],
+      "score_anchors": {
+        "1": "关键证据缺失",
+        "2": "有部分相关证据，但本人贡献或结果有限",
+        "3": "证据完整且与岗位结果匹配",
+        "4": "证据具体，能处理复杂情境并持续复盘"
+      }
+    },
+    {
+      "id": "customer_insight",
+      "name": "用户洞察",
+      "definition": "从用户行为和反馈中提炼可行动的问题判断",
+      "signals": ["能区分事实与假设", "能把洞察转成验证动作"],
+      "behavioral_questions": [
+        "讲一个你从用户反馈中发现新问题的例子。",
+        "讲一个你推翻原有用户假设的例子。"
+      ],
+      "situational_questions": ["如果用户说法与使用数据冲突，你会如何判断？"],
+      "probes": ["有哪些原始证据？", "你如何验证判断？"],
+      "score_anchors": {
+        "1": "无法说明证据来源",
+        "2": "能复述反馈，但行动判断不完整",
+        "3": "能连接用户证据与产品动作",
+        "4": "能持续验证并改变产品方向"
+      }
+    },
+    {
+      "id": "collaboration",
+      "name": "跨团队协作",
+      "definition": "在目标、信息和资源不一致时推动共同交付",
+      "signals": ["能说清共同目标", "能处理分歧并推进决策"],
+      "behavioral_questions": [
+        "讲一个你推动不同团队完成交付的例子。",
+        "讲一个你处理关键分歧并继续推进的例子。"
+      ],
+      "situational_questions": ["如果研发和业务对优先级意见相反，你会怎么做？"],
+      "probes": ["你如何让对方参与？", "最后的决策依据是什么？"],
+      "score_anchors": {
+        "1": "缺少本人行动和协作证据",
+        "2": "能协调局部事项，但缺少共同决策",
+        "3": "能围绕目标解决分歧并完成交付",
+        "4": "能建立长期协作方式并提升团队结果"
+      }
+    },
+    {
+      "id": "execution",
+      "name": "执行推进",
+      "definition": "把判断转成节奏清楚、风险可见的交付计划",
+      "signals": ["能拆分里程碑", "能提前暴露风险并调整计划"],
+      "behavioral_questions": [
+        "讲一个你在资源受限时完成交付的例子。",
+        "讲一个你及时调整计划避免延期的例子。"
+      ],
+      "situational_questions": ["如果关键依赖突然延期，你会怎样重新安排？"],
+      "probes": ["你如何判断风险？", "结果是否达到预期？"],
+      "score_anchors": {
+        "1": "无法说明计划和结果",
+        "2": "有执行动作，但风险处理较弱",
+        "3": "计划、推进和结果证据完整",
+        "4": "能在复杂约束下稳定交付并改进方法"
+      }
+    }
+  ],
+  "rounds": [
+    {"name": "业务面", "duration_minutes": 45, "interviewer_role": "直属主管", "competencies": ["problem_solving", "customer_insight"]},
+    {"name": "协作面", "duration_minutes": 30, "interviewer_role": "跨团队伙伴", "competencies": ["collaboration"]},
+    {"name": "执行面", "duration_minutes": 45, "interviewer_role": "业务负责人", "competencies": ["execution", "problem_solving"]}
+  ]
+}
