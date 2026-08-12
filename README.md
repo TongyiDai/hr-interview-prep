@@ -81,7 +81,7 @@ lark-cli docs +fetch --doc "https://example.feishu.cn/docx/XXXX" --scope full --
 lark-cli sheets +cells-get --url "https://example.feishu.cn/sheets/shtXXXX" --sheet-name "岗位要求" --range "A1:Z80" --include value,formula --as user --json
 ```
 
-飞书只负责读取用户明确授权的岗位材料。没有飞书接口时，直接使用本地或用户提供的材料即可。日历创建、消息发送、候选人状态修改和 Offer 操作需要转交相应 Skill，并单独确认。
+支持 `auth status --json --verify` 的环境必须确认 `identity=user`、`verified=true`。当前 CLI 构建若没有 `auth` 子命令，可退回 `contact +get-user --as user` 或 `task +get-my-tasks --as user` 做只读兼容探测。飞书只负责读取用户明确授权的岗位材料。没有飞书接口时，直接使用本地或用户提供的材料即可。日历创建、消息发送、候选人状态修改和 Offer 操作需要转交相应 Skill，并单独确认。
 
 ## 面试设计的主线
 
