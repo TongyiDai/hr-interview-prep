@@ -132,4 +132,4 @@ python3 /path/to/skill-creator/scripts/quick_validate.py .
 
 ## 上游与许可证
 
-本项目以 [Anthropic Human Resources Plugin](https://github.com/anthropics/knowledge-work-plugins/tree/658e077ffd7bdd50a12c19ec5ff36fe34c88be8a/human-resources) 的 `interview-prep` 为上游参考；同时吸收 [OPM Structured Interviews](https://www.opm.gov/policy-data-oversight/assessment-and-selection/structured-interviews) 和 [Greenhouse Scorecards](https://support.greenhouse.io/hc/en-us/articles/4414777492891-Scorecard-overview) 的公开结构化面试实践。差异和许可证见 [UPSTREAM.md](UPSTREAM.md) 与 [LICENSE-APACHE-2.0](LICENSE-APACHE-2.0)。
+本项目以 [Anthropic Human Resources Plugin](https://github.com/anthropics/knowledge-work-plugins/tree/658e077ffd7bdd50a12c19ec5ff36fe34c88be8a/human-resources) 的 `interview-prep` 为上游参考；同时吸收 [OPM Structured Interviews](https://www.opm.gov/policy-data-oversight/assessment-and-selection/structured-interviews) 和 [Greenhouse Scorecards](https://support.greenhouse.io/hc/en-us/articles/4414777492891-Scorecard-overview) 的公开结构化面试实践。差异和许可证见 [UPSTREAM.md](UPSTREAM.md) 与 [LICENSE](LICENSE)。
