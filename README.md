@@ -35,7 +35,7 @@
 候选人简历属于可选输入。它只用于在统一岗位框架下生成核验问题，不改变核心题库、评分锚定和岗位标准。
 
 <p align="center">
-  <img src="assets/boards/interview-loop.svg" alt="岗位结果经过胜任力、题库和评分表形成结构化面试包" />
+  <img src="assets/boards/interview-loop.svg?v=2" alt="岗位结果经过胜任力、统一问题、评分锚定和独立复盘形成结构化面试包" />
 </p>
 
 ## Agent 使用须知
@@ -45,7 +45,7 @@
 Agent 开始前要确认岗位结果、评价口径、面试轮次和输出目的；先检查用户消息和本地材料；使用外部系统时再确认身份与授权范围；缺少岗位证据时明确标记假设；评分和录用决定始终保留给人类。
 
 <p align="center">
-  <img src="assets/boards/evidence-rubric.svg" alt="回答证据经过评分锚定后进入人工复核" />
+  <img src="assets/boards/evidence-rubric.svg?v=2" alt="面试回答转成可复核证据，再按行为锚定进入人工复核" />
 </p>
 
 ## 快速开始
@@ -88,7 +88,7 @@ lark-cli sheets +cells-get --url "https://example.feishu.cn/sheets/shtXXXX" --sh
 岗位结果决定胜任力，胜任力决定问题，问题决定证据，证据进入锚定评分，面试官先独立提交，再进入团队复盘。
 
 <p align="center">
-  <img src="assets/boards/panel-coverage.svg" alt="面试官分工覆盖岗位胜任力并减少重复提问" />
+  <img src="assets/boards/panel-coverage.svg?v=2" alt="面试轮次与岗位能力的覆盖矩阵，明确每项能力的观察人" />
 </p>
 
 ## 可选：候选人针对性追问
@@ -116,7 +116,7 @@ python3 scripts/build_candidate_questions.py \
 - 不把总分直接改写成自动录用或淘汰建议。
 
 <p align="center">
-  <img src="assets/boards/human-review.svg" alt="结构化面试提供证据，最终决策保留人工复核" />
+  <img src="assets/boards/human-review.svg?v=2" alt="Agent 整理材料和证据，人类面试团队确认并承担最终决定" />
 </p>
 
 ## 验证

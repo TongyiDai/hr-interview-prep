@@ -1,18 +1,18 @@
 {
   "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
-  "intent": {"core_message": "岗位结果决定问题，证据进入人工复核。", "composition": "axis-flow", "focus_node": "questions"},
+  "intent": {"core_message": "面试从岗位结果出发", "subtitle": "统一问题、证据评分、独立复盘", "composition": "axis-flow", "focus_node": "questions"},
   "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
   "nodes": [
-    {"id": "outcomes", "type": "point", "label": "岗位结果", "importance": 3},
-    {"id": "competencies", "type": "point", "label": "胜任力", "importance": 3},
-    {"id": "questions", "type": "point", "label": "统一问题", "importance": 5, "accent": true},
-    {"id": "scorecard", "type": "point", "label": "评分表", "importance": 3},
-    {"id": "debrief", "type": "point", "label": "复盘", "importance": 3}
+    {"id": "outcomes", "type": "plane", "label": "岗位结果", "importance": 3},
+    {"id": "competencies", "type": "circle", "label": "胜任力", "importance": 3},
+    {"id": "questions", "type": "circle", "label": "统一问题", "importance": 5, "accent": true},
+    {"id": "scorecard", "type": "line", "label": "评分锚定", "importance": 3},
+    {"id": "debrief", "type": "frame", "label": "独立复盘", "importance": 3}
   ],
   "edges": [
     {"from": "outcomes", "to": "competencies", "relation": "提炼"},
-    {"from": "competencies", "to": "questions", "relation": "设计"},
-    {"from": "questions", "to": "scorecard", "relation": "观察"},
-    {"from": "scorecard", "to": "debrief", "relation": "复核"}
+    {"from": "competencies", "to": "questions", "relation": "统一"},
+    {"from": "questions", "to": "scorecard", "relation": "记录"},
+    {"from": "scorecard", "to": "debrief", "relation": "独立提交"}
   ]
 }
