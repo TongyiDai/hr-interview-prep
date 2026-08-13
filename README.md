@@ -125,7 +125,8 @@ python3 scripts/build_candidate_questions.py \
 
 ```bash
 python3 -m unittest discover -s tests -p 'test_*.py'
-python3 /path/to/skill-creator/scripts/quick_validate.py .
+# 可选：若本机已安装 skill-creator 工具，可额外校验 SKILL.md frontmatter
+# python3 "$SKILL_CREATOR/scripts/quick_validate.py" .
 ```
 
 当前测试覆盖输入结构、题库要求、轮次覆盖、评分锚定、敏感字段拒绝、脱敏输出和候选人针对性问题生成。
